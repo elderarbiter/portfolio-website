@@ -34,7 +34,7 @@ a {
 
 .container {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .profile_portrait {
@@ -56,7 +56,7 @@ justify-content: center;
 }
 
 body {
-  background-color: #F8F8FF;
+  background-color: #f8f8ff;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -83,9 +83,9 @@ body {
 }
 
 .grid-item:last-child {
-  grid-column-start: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-column: 3;
+  grid-row: 1;
+  grid-row: 3;
 }
 
 h1 {
@@ -103,7 +103,9 @@ h3 {
   font-weight: 700;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: var(--font-weight);
 }
 
@@ -111,7 +113,8 @@ a {
   color: #357b70;
 }
 
-a:hover, A:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -131,21 +134,25 @@ button,
 .button3,
 .my-input {
   /* overwrites browswer defaults and resets the boarder */
-  border:none;
+  border: none;
   display: inline-block;
+
   /* takes the font from the outer contaner */
-  font-family:inherit;
+  font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc) of the button */
   background-color: #357b70;
   color: white;
   text-decoration: none;
+
   /* adds spacing to the button (this will be discussed more in-depth later? */
   padding: 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
-  }
+}
 
 button:hover,
 button:focus,
@@ -156,18 +163,20 @@ button:focus,
   opacity: 0.8;
 }
 
-  .button_secondary {
+.button_secondary {
   background-color: #e0b354;
   color: #2b2b2b;
-    }
+}
 
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -181,6 +190,7 @@ button:focus,
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -189,10 +199,11 @@ button:focus,
 @keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
-}
-to {
+  }
+
+  to {
     transform: translate(100px, 48px);
-   }
+  }
 }
 
 .cloud-front {
@@ -216,16 +227,18 @@ to {
   text-decoration: none;
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   /* lets the mouse appear as a had when hovering over the button */
   cursor: pointer;
+
   /* reduces the oacity of the button to 80% */
   opacity: 0.8;
 }
 
 .center {
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-footer {
@@ -233,7 +246,6 @@ margin-right: auto;
   clear: both;
   display: flex;
   flex-direction: column;
-  display: flex;
   justify-content: center;
 }
 
@@ -253,10 +265,12 @@ margin-right: auto;
   .grid {
     grid-gap: 10px;
   }
+
   .grid_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
