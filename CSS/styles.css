@@ -182,6 +182,11 @@ button:focus,
   }
 }
 
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
